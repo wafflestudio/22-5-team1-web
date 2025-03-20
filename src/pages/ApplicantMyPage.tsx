@@ -20,7 +20,7 @@ export const ApplicantMyPage = () => {
                 <CoffeeChatNumberBadge />
               </TabsTrigger>
               <TabsTrigger value="BOOKMARK">관심 공고</TabsTrigger>
-              <TabsTrigger value="MY_INFO">내 정보</TabsTrigger>
+              <TabsTrigger value="PROFILE">내 정보</TabsTrigger>
             </TabsList>
 
             <TabsContent value="COFFEE_CHAT">
@@ -29,7 +29,7 @@ export const ApplicantMyPage = () => {
             <TabsContent value="BOOKMARK">
               <BookmarkListView />
             </TabsContent>
-            <TabsContent value="MY_INFO">
+            <TabsContent value="PROFILE">
               <ApplicantInfo />
             </TabsContent>
           </div>
