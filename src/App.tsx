@@ -11,7 +11,6 @@ import {
   implApi,
 } from '@/api';
 import { implExternalApi } from '@/api/client';
-import { PATH } from '@/entities/route';
 import { implApplicantService } from '@/feature/applicant';
 import { implAuthService } from '@/feature/auth';
 import { implCoffeeChatService } from '@/feature/coffeeChat';
@@ -41,6 +40,7 @@ import { ServiceContext } from '@/shared/context/ServiceContext';
 import { TokenContext } from '@/shared/context/TokenContext';
 import { implFileService } from '@/shared/file/fileService';
 import { implRoleStateRepository } from '@/shared/role/state';
+import { PATH } from '@/shared/route/constants';
 import { implTokenStateRepository } from '@/shared/token/state';
 
 const RouterProvider = () => {

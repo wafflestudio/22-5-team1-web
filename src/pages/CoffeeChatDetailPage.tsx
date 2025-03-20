@@ -1,11 +1,11 @@
 import { GlobalNavigationBar } from '@/components/nav/GlobarNavigationBar';
-import { PATH } from '@/entities/route';
 import { CoffeeChatDetailView } from '@/feature/coffeeChat';
+import { PATH } from '@/shared/route/constants';
 import { RouteNavigator } from '@/shared/route/RouteNavigator';
-import { useRouteParams } from '@/shared/route/useRouteParams';
+import { useRoutePathParams } from '@/shared/route/useRouteParams';
 
 export const CoffeeChatDetailPage = () => {
-  const { coffeeChatId } = useRouteParams<{ coffeeChatId: string }>();
+  const { coffeeChatId } = useRoutePathParams<{ coffeeChatId: string }>();
 
   if (coffeeChatId === undefined) {
     return <RouteNavigator link={PATH.MY_PAGE} />;
