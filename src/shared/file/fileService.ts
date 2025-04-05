@@ -60,12 +60,10 @@ export const implFileService = ({
     return { type: 'error', code: data.code, message: data.message };
   },
   getDownloadPresignedUrl: async ({ token, s3Key, fileType }) => {
-    const downloadPath = new URLSearchParams({
+    const params = {
       s3Key,
       fileType,
-    });
-
-    const params = { filePath: downloadPath.toString() };
+    };
 
     const { status, data } = await apis['GET /s3']({
       token,
